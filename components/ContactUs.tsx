@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, ChangeEvent, FormEvent } from 'react';
 import emailjs from '@emailjs/browser';
 import classnames from 'classnames';
 
@@ -26,7 +26,9 @@ export const ContactUs = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { target } = e;
     const { name, value } = target;
 
@@ -36,7 +38,7 @@ export const ContactUs = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
 
@@ -68,12 +70,11 @@ export const ContactUs = () => {
             `Thank you. I will get back to you as soon as possible. ${form.name}`
           );
 
-          if (!form)
-            setForm({
-              name: '',
-              email: '',
-              message: '',
-            });
+          setForm({
+            name: '',
+            email: '',
+            message: '',
+          });
         },
         (error) => {
           setLoading(false);
@@ -110,6 +111,7 @@ export const ContactUs = () => {
                           name="name"
                           value={form.name}
                           onChange={handleChange}
+                          required
                         />
                       </InputGroup>
                     </FormGroup>
@@ -126,6 +128,7 @@ export const ContactUs = () => {
                           type="email"
                           value={form.email}
                           onChange={handleChange}
+                          required
                         />
                       </InputGroup>
                     </FormGroup>
@@ -139,6 +142,7 @@ export const ContactUs = () => {
                         type="textarea"
                         value={form.message}
                         onChange={handleChange}
+                        required
                       />
                     </FormGroup>
                     <div>
