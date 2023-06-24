@@ -199,7 +199,7 @@ export const educationInfo: EducationType[] = [
     subHeader: 'B.Tech. in Computer Science',
     duration: "July'2020 - pursuing",
     desc: 'Specialization ',
-    grade: '7.5 cgpa',
+    grade: '7.54 cgpa',
     descBullets: ['Web Development '],
   },
 ];
