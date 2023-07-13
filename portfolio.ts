@@ -207,8 +207,8 @@ export const educationInfo: EducationType[] = [
 export const experience: ExperienceType[] = [
   {
     role: 'Frontend and Graphic Developer',
-    company: 'Eloin.in',
-    links: 'https://www.eloin.in/',
+    company: 'Eloin',
+    links: 'https://www.eloin.tech/',
     companyLogo: '/img/icons/common/dusecaSoftware.png',
     date: 'December 2020 - November 2022',
     desc: ` "Gained hands-on experience in developing, implementing, and maintaining internal websites.",
