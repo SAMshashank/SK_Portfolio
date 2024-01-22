@@ -16,6 +16,10 @@ For adding emoji 😃 into the texts in `Portfolio.js`, use the `emoji()` functi
 - [react-headroom](https://github.com/KyleAMathews/react-headroom)
 - [color-thief](https://github.com/lokesh/color-thief)
 
+## Programming languages
+ - Typescript
+ - Javascript
+   
 ## Illustrations
 
 - [Lottie File Source](https://lottiefiles.com)
