@@ -1,4 +1,4 @@
-[website live](https://sk-portfolio-x39c.vercel.app/)
+
 <h1 align="center">Welcome My-portfolio 👋</h1>
 
 #### Using Emojis
